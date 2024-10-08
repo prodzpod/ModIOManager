@@ -1,0 +1,9 @@
+{
+	"name": "ModIOManager",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/prodzpod/ModIOManager",
+	"description": "automatically downloads and updates mod.io mods.",
+	"dependencies": [
+		"prodzpod-NewBepin-1.0.0"
+	]
+}

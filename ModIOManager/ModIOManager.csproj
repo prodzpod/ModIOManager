@@ -1,0 +1,233 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<Compile Remove="libs\**" />
+		<EmbeddedResource Remove="libs\**" />
+		<None Remove="libs\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BepInEx.Core" Version="5.4.19" />
+		<PackageReference Include="BepInEx.BaseLib" Version="5.4.19" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Accessibility">
+	    <HintPath>..\..\libs\Accessibility-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Animation.Authoring">
+	    <HintPath>..\..\libs\Animation.Authoring-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Animation.Components">
+	    <HintPath>..\..\libs\Animation.Components-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Animation.Converters">
+	    <HintPath>..\..\libs\Animation.Converters-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Animation.Systems">
+	    <HintPath>..\..\libs\Animation.Systems-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Discord.SDK">
+	    <HintPath>..\..\libs\Discord.SDK-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Interaction">
+	    <HintPath>..\..\libs\Interaction-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Interaction.Authoring">
+	    <HintPath>..\..\libs\Interaction.Authoring-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Interaction.Components">
+	    <HintPath>..\..\libs\Interaction.Components-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Interaction.Converters">
+	    <HintPath>..\..\libs\Interaction.Converters-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Interaction.CoreKeeper">
+	    <HintPath>..\..\libs\Interaction.CoreKeeper-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Interaction.CoreKeeper.Authoring">
+	    <HintPath>..\..\libs\Interaction.CoreKeeper.Authoring-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Interaction.CoreKeeper.Components">
+	    <HintPath>..\..\libs\Interaction.CoreKeeper.Components-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Interaction.CoreKeeper.Converters">
+	    <HintPath>..\..\libs\Interaction.CoreKeeper.Converters-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="modio.UI">
+	    <HintPath>..\..\libs\modio.UI-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="modio.UnityPlugin">
+	    <HintPath>..\..\libs\modio.UnityPlugin-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Newtonsoft.Json">
+	    <HintPath>..\..\libs\Newtonsoft.Json-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.Base">
+	    <HintPath>..\..\libs\Pug.Base-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.ColorCycling">
+	    <HintPath>..\..\libs\Pug.ColorCycling-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.Dev">
+	    <HintPath>..\..\libs\Pug.Dev-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.ECS.Authoring">
+	    <HintPath>..\..\libs\Pug.ECS.Authoring-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.ECS.Components">
+	    <HintPath>..\..\libs\Pug.ECS.Components-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.ECS.Conversion">
+	    <HintPath>..\..\libs\Pug.ECS.Conversion-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.ECS.Extensions">
+	    <HintPath>..\..\libs\Pug.ECS.Extensions-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.ECS.Hybrid">
+	    <HintPath>..\..\libs\Pug.ECS.Hybrid-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.ECS.Serialization">
+	    <HintPath>..\..\libs\Pug.ECS.Serialization-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.ECS.Serialization.DOTS100">
+	    <HintPath>..\..\libs\Pug.ECS.Serialization.DOTS100-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.Mods">
+	    <HintPath>..\..\libs\Pug.Mods-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.ObjectIDCategory">
+	    <HintPath>..\..\libs\Pug.ObjectIDCategory-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.Objects">
+	    <HintPath>..\..\libs\Pug.Objects-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.PP">
+	    <HintPath>..\..\libs\Pug.PP-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pug.UnityExtensions">
+	    <HintPath>..\..\libs\Pug.UnityExtensions-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugConversion">
+	    <HintPath>..\..\libs\PugConversion-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugMap.Common">
+	    <HintPath>..\..\libs\PugMap.Common-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugMod.Integration">
+	    <HintPath>..\..\libs\PugMod.Integration-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugMod.Loader">
+	    <HintPath>..\..\libs\PugMod.Loader-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugMod.Platform">
+	    <HintPath>..\..\libs\PugMod.Platform-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugMod.SDK">
+	    <HintPath>..\..\libs\PugMod.SDK-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugMod.SDK.Runtime">
+	    <HintPath>..\..\libs\PugMod.SDK.Runtime-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugProperties">
+	    <HintPath>..\..\libs\PugProperties-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugRP">
+	    <HintPath>..\..\libs\PugRP-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Pugstorm.WorldGen">
+	    <HintPath>..\..\libs\Pugstorm.WorldGen-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugWorldGen.Authoring">
+	    <HintPath>..\..\libs\PugWorldGen.Authoring-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugWorldGen.Components">
+	    <HintPath>..\..\libs\PugWorldGen.Components-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugWorldGen.Conversion">
+	    <HintPath>..\..\libs\PugWorldGen.Conversion-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugWorldGen.CustomScenes">
+	    <HintPath>..\..\libs\PugWorldGen.CustomScenes-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugWorldGen.Dungeons">
+	    <HintPath>..\..\libs\PugWorldGen.Dungeons-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PugWorldGen.Placement">
+	    <HintPath>..\..\libs\PugWorldGen.Placement-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.Addressables">
+	    <HintPath>..\..\libs\Unity.Addressables-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.Postprocessing.Runtime">
+	    <HintPath>..\..\libs\Unity.Postprocessing.Runtime-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.TextMeshPro">
+	    <HintPath>..\..\libs\Unity.TextMeshPro-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine">
+	    <HintPath>..\..\libs\UnityEngine-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AssetBundleModule">
+	    <HintPath>..\..\libs\UnityEngine.AssetBundleModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AudioModule">
+	    <HintPath>..\..\libs\UnityEngine.AudioModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.CoreModule">
+	    <HintPath>..\..\libs\UnityEngine.CoreModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ImageConversionModule">
+	    <HintPath>..\..\libs\UnityEngine.ImageConversionModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.IMGUIModule">
+	    <HintPath>..\..\libs\UnityEngine.IMGUIModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.InputModule">
+	    <HintPath>..\..\libs\UnityEngine.InputModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.PhysicsModule">
+	    <HintPath>..\..\libs\UnityEngine.PhysicsModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TextCoreFontEngineModule">
+	    <HintPath>..\..\libs\UnityEngine.TextCoreFontEngineModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TextCoreTextEngineModule">
+	    <HintPath>..\..\libs\UnityEngine.TextCoreTextEngineModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TextRenderingModule">
+	    <HintPath>..\..\libs\UnityEngine.TextRenderingModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UI">
+	    <HintPath>..\..\libs\UnityEngine.UI-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UIElementsModule">
+	    <HintPath>..\..\libs\UnityEngine.UIElementsModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UIModule">
+	    <HintPath>..\..\libs\UnityEngine.UIModule-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="WorldGen">
+	    <HintPath>..\..\libs\WorldGen-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="WorldGen.Runtime">
+	    <HintPath>..\..\libs\WorldGen.Runtime-nstrip.dll</HintPath>
+	  </Reference>
+	  <Reference Include="WorldPatcher">
+	    <HintPath>..\..\libs\WorldPatcher-nstrip.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+	
+	  <ItemGroup>
+		<None Update="manifest.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	  </ItemGroup>
+
+</Project>
